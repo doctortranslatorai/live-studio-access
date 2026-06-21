@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sala ao vivo — LIVELOOP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="logo"></span>
+    <span>LIVELOOP</span>
+  </a>
+  <div class="search"><span>⌕</span><input placeholder="Procurar lives, criadores ou categorias" /></div>
+  <div class="top-actions">
+    <a class="btn" href="explore.html">Explorar</a>
+    <a class="btn btn-primary" href="create.html">+ Criar live</a>
+    <a class="avatar" href="profile.html">P</a>
+  </div>
+</header>
+  <main class="page">
+    <section class="live-room">
+      <div class="panel video-stage">
+        <div class="video-screen">
+          <div class="video-top">
+            <div class="live-tag"><span class="pulse"></span> LIVE</div>
+            <div class="viewer-tag" id="liveRoomViewers">2.384 ao vivo</div>
+          </div>
+          <div class="play-orb"></div>
+        </div>
+        <div class="video-bottom">
+          <div>
+            <h2 id="liveRoomTitle" class="section-title" style="text-align:left;margin:0">Live</h2>
+            <p class="small-text"><span id="liveRoomCreator">@criador</span> · <span id="liveRoomCategory">Categoria</span></p>
+          </div>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-toast="Seguiste este criador.">Seguir</button>
+            <button class="btn" data-toast="Live partilhada no modo mockup.">Partilhar</button>
+            <button class="btn btn-danger" data-toast="Presente enviado 🎁">Gift</button>
+          </div>
+        </div>
+      </div>
+
+      <aside class="panel chat">
+        <div class="chat-head">
+          <h3 class="right-title">Chat ao vivo</h3>
+          <p class="small-text">Mensagens simuladas da comunidade.</p>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-bubble"><strong>Lia:</strong> Isto está muito bom 🔥</div>
+          <div class="chat-bubble"><strong>Nuno:</strong> Entra em modo full screen!</div>
+          <div class="chat-bubble"><strong>Marta:</strong> Que energia brutal.</div>
+          <div class="chat-bubble"><strong>LiveLoop:</strong> Bem-vindo à sala ao vivo.</div>
+        </div>
+        <form class="chat-input" id="chatForm">
+          <input id="chatText" placeholder="Escrever no chat..." />
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+      </aside>
+    </section>
+  </main>
+  <nav class="mobile-nav">
+  <a href="index.html">⌂</a>
+  <a href="explore.html">⌕</a>
+  <a href="create.html">＋</a>
+  <a href="messages.html">✉</a>
+  <a href="profile.html">◉</a>
+</nav>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil — LIVELOOP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="logo"></span>
+    <span>LIVELOOP</span>
+  </a>
+  <div class="search"><span>⌕</span><input placeholder="Procurar lives, criadores ou categorias" /></div>
+  <div class="top-actions">
+    <a class="btn" href="explore.html">Explorar</a>
+    <a class="btn btn-primary" href="create.html">+ Criar live</a>
+    <a class="avatar" href="profile.html">P</a>
+  </div>
+</header>
+  <main class="page">
+    <section class="panel profile-header">
+      <div class="profile-avatar">P</div>
+      <div>
+        <h1>Pedro Live</h1>
+        <p>@pedrolive · Criador, ideias com IA, lives de projetos, música e tecnologia. Aqui tudo acontece em tempo real.</p>
+        <div class="profile-stats">
+          <div class="stat"><strong>12.8k</strong><span>seguidores</span></div>
+          <div class="stat"><strong>148h</strong><span>em live</span></div>
+          <div class="stat"><strong>92</strong><span>lives feitas</span></div>
+          <div class="stat"><strong>4.9</strong><span>avaliação</span></div>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <button class="btn btn-primary" data-toast="Perfil seguido.">Seguir</button>
+        <a class="btn" href="messages.html">Mensagem</a>
+      </div>
+    </section>
+
+    <section class="feed" style="margin-top:18px">
+      <h2 class="section-title" style="text-align:left">Lives deste criador</h2>
+      <div class="live-grid">
+        <article class="panel live-card">
+          <a href="live.html?id=5" class="thumb alt2">
+            <div class="live-tag"><span class="pulse"></span> LIVE</div>
+            <div class="viewer-tag">👁 772</div>
+            <div class="visual-orb"></div>
+          </a>
+          <div class="live-body">
+            <h3>IA para criar conteúdo viral</h3>
+            <p>Prompts, estratégia e criação em tempo real.</p>
+            <div class="live-actions"><a class="btn btn-primary" href="live.html?id=5">Entrar</a></div>
+          </div>
+        </article>
+
+        <article class="panel live-card">
+          <a href="create.html" class="thumb alt3">
+            <div class="viewer-tag">Agendada</div>
+            <div class="visual-orb"></div>
+          </a>
+          <div class="live-body">
+            <h3>Construir uma app do zero</h3>
+            <p>Amanhã às 21:00 · Criar, testar e publicar.</p>
+            <div class="live-actions"><button class="btn" data-toast="Lembrete ativado.">Receber aviso</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <nav class="mobile-nav">
+  <a href="index.html">⌂</a>
+  <a href="explore.html">⌕</a>
+  <a href="create.html">＋</a>
+  <a href="messages.html">✉</a>
+  <a href="profile.html">◉</a>
+</nav>
+  <script src="app.js"></script>
+</body>
+</html>

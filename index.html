@@ -3,110 +3,96 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LIVE Studio Access</title>
-  <meta name="description" content="Página moderna de acesso e apresentação para LIVE Studio." />
+  <title>LIVELOOP — Rede social só para lives</title>
+  <meta name="description" content="Rede social live-first onde tudo acontece em direto." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="index.html">
-      <span class="brand-mark"></span>
-      <span>LIVE Studio</span>
-    </a>
-    <nav class="nav">
-      <a class="active" href="index.html">Início</a>
-      <a href="acesso.html">Pedir acesso</a>
-      <a class="keep" href="studio.html">Studio</a>
-      <span class="lang">PT 🌐</span>
-    </nav>
-  </header>
+  <div class="app">
+    <header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="logo"></span>
+    <span>LIVELOOP</span>
+  </a>
+  <div class="search"><span>⌕</span><input placeholder="Procurar lives, criadores ou categorias" /></div>
+  <div class="top-actions">
+    <a class="btn" href="explore.html">Explorar</a>
+    <a class="btn btn-primary" href="create.html">+ Criar live</a>
+    <a class="avatar" href="profile.html">P</a>
+  </div>
+</header>
+    <main class="layout">
+      <aside class="sidebar">
+  <nav class="panel nav-card">
+    <a class="nav-link active" href="index.html"><span class="ico">⌂</span> Feed ao vivo</a>
+    <a class="nav-link" href="explore.html"><span class="ico">⌕</span> Explorar</a>
+    <a class="nav-link" href="create.html"><span class="ico">＋</span> Criar live</a>
+    <a class="nav-link" href="messages.html"><span class="ico">✉</span> Mensagens</a>
+    <a class="nav-link" href="profile.html"><span class="ico">◉</span> Perfil</a>
+  </nav>
 
-  <main>
-    <section class="hero">
-      <div class="hero-inner">
-        <div class="badge"><span class="pulse"></span> Acesso para criadores em direto</div>
-        <h1>Começa a fazer <span class="gradient-text">LIVE</span><br>com o teu Studio</h1>
-        <p class="subtitle">
-          Mockup independente inspirado em páginas modernas de live, com candidatura, painel de estado,
-          área de instalação e experiência premium para criadores.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="acesso.html">Pedir acesso</a>
-          <a class="btn" href="studio.html">Abrir painel</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="content">
-      <section class="section">
-        <h2 class="section-title">Começa hoje</h2>
-        <p class="section-subtitle">Fluxo simples: pedido, validação e instalação.</p>
-
-        <div class="card steps">
-          <div class="step">
-            <div class="num">1</div>
-            <div>
-              <h3>Pedir acesso</h3>
-              <p>Preenche o formulário e guarda a tua candidatura no modo local.</p>
-            </div>
-            <a class="btn" href="acesso.html">Ver detalhes</a>
-          </div>
-
-          <div class="step">
-            <div class="num">2</div>
-            <div>
-              <h3>Instalar LIVE Studio</h3>
-              <p>Depois da aprovação, o painel mostra o botão de instalação ou download.</p>
-            </div>
-            <a class="btn btn-primary" href="studio.html">Download</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2 class="section-title">Porquê usar LIVE?</h2>
-        <div class="card features">
-          <div class="feature">
-            <div class="icon">↗</div>
-            <div>
-              <h3>Novas oportunidades</h3>
-              <p>Monetização, parcerias, comunidade ativa e eventos ao vivo.</p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="icon">◎</div>
-            <div>
-              <h3>Comunidade em tempo real</h3>
-              <p>Chat, reações, alertas, gifts e interação direta com seguidores.</p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="icon">◆</div>
-            <div>
-              <h3>Marca pessoal</h3>
-              <p>Cenas, overlays, identidade visual e presença profissional.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2 class="section-title">Saber mais</h2>
-        <div class="grid-2">
-          <a class="card mini" href="acesso.html">
-            <h3>Explorar gaming em LIVE ›</h3>
-            <p>Ideal para criadores, streamers, conteúdos interativos e eventos.</p>
-          </a>
-          <a class="card mini" href="studio.html">
-            <h3>Conhecer o LIVE Studio ›</h3>
-            <p>Área de estado, instalação, checklist e preparação técnica.</p>
-          </a>
-        </div>
-        <div class="footer"><span>LIVE Studio</span><span>•</span><span>Mockup independente</span></div>
-      </section>
+  <div class="panel creator-card">
+    <h3>Modo criador</h3>
+    <p>Rede social live-first: sem posts parados, só transmissões, salas e comunidade em tempo real.</p>
+    <div class="stat-row">
+      <div class="stat"><strong>24</strong><span>lives hoje</span></div>
+      <div class="stat"><strong>8.7k</strong><span>pessoas online</span></div>
     </div>
-  </main>
+    <a class="btn btn-primary" style="width:100%" href="create.html">Começar live</a>
+  </div>
+</aside>
+      <section class="feed">
+        <div class="hero">
+          <div class="hero-content">
+            <div class="badge"><span class="pulse"></span> Tudo em direto</div>
+            <h1>A rede social onde só existe <span class="gradient">LIVE</span></h1>
+            <p>Sem feed morto. Sem posts esquecidos. Aqui ou estás ao vivo, ou estás a assistir, conversar, reagir e participar em tempo real.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="create.html">+ Criar live agora</a>
+              <a class="btn" href="explore.html">Explorar lives</a>
+            </div>
+          </div>
+        </div>
 
+        <div class="tabs">
+          <button class="tab active" data-category="Todas">Todas</button>
+          <button class="tab" data-category="Gaming">Gaming</button>
+          <button class="tab" data-category="Música">Música</button>
+          <button class="tab" data-category="Conversa">Conversa</button>
+          <button class="tab" data-category="Vendas">Vendas</button>
+          <button class="tab" data-category="Educação">Educação</button>
+        </div>
+
+        <div class="live-grid" id="liveGrid"></div>
+      </section>
+      <aside class="rightbar">
+  <div class="panel">
+    <h3 class="right-title">Tendências agora</h3>
+    <div class="trend-list">
+      <div class="trend"><div class="rank">1</div><div><strong>Gaming night</strong><span>3.2k espectadores</span></div></div>
+      <div class="trend"><div class="rank">2</div><div><strong>Live commerce</strong><span>1.8k espectadores</span></div></div>
+      <div class="trend"><div class="rank">3</div><div><strong>IA ao vivo</strong><span>920 espectadores</span></div></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3 class="right-title">A começar em breve</h3>
+    <div class="schedule-list">
+      <div class="schedule"><div class="mini-avatar">ET</div><div><strong>Ernesto Live</strong><span>Hoje · 21:30</span></div></div>
+      <div class="schedule"><div class="mini-avatar">AI</div><div><strong>Prompts para Reels</strong><span>Amanhã · 18:00</span></div></div>
+      <div class="schedule"><div class="mini-avatar">PT</div><div><strong>Conversa Portugal</strong><span>Sábado · 22:00</span></div></div>
+    </div>
+  </div>
+</aside>
+    </main>
+    <nav class="mobile-nav">
+  <a href="index.html">⌂</a>
+  <a href="explore.html">⌕</a>
+  <a href="create.html">＋</a>
+  <a href="messages.html">✉</a>
+  <a href="profile.html">◉</a>
+</nav>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>

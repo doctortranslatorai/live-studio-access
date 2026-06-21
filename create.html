@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar Live — LIVELOOP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="logo"></span>
+    <span>LIVELOOP</span>
+  </a>
+  <div class="search"><span>⌕</span><input placeholder="Procurar lives, criadores ou categorias" /></div>
+  <div class="top-actions">
+    <a class="btn" href="explore.html">Explorar</a>
+    <a class="btn btn-primary" href="create.html">+ Criar live</a>
+    <a class="avatar" href="profile.html">P</a>
+  </div>
+</header>
+  <main class="page">
+    <section class="page-hero">
+      <div class="badge"><span class="pulse"></span> Criador</div>
+      <h1>Cria ou agenda a tua <span class="gradient">live</span></h1>
+      <p>Define título, categoria, descrição e começa uma sala ao vivo em modo mockup. Depois podemos ligar isto a backend real.</p>
+    </section>
+
+    <section class="form-grid">
+      <form class="panel form" id="createLiveForm">
+        <div class="field">
+          <label for="creator">Nome do criador</label>
+          <input id="creator" name="creator" placeholder="Ex.: Pedro Live" required />
+        </div>
+
+        <div class="field">
+          <label for="title">Título da live</label>
+          <input id="title" name="title" placeholder="Ex.: Ideias ao vivo com IA" required />
+        </div>
+
+        <div class="field">
+          <label for="category">Categoria</label>
+          <select id="category" name="category" required>
+            <option value="">Escolher categoria</option>
+            <option>Gaming</option>
+            <option>Música</option>
+            <option>Conversa</option>
+            <option>Vendas</option>
+            <option>Educação</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="description">Descrição curta</label>
+          <textarea id="description" name="description" placeholder="Explica o que vai acontecer nesta live."></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Começar live</button>
+      </form>
+
+      <aside class="panel checklist">
+        <h3 class="section-title" style="text-align:left">Checklist antes de entrar em direto</h3>
+        <div class="check">✓ Câmara e microfone verificados</div>
+        <div class="check">✓ Título claro e com promessa forte</div>
+        <div class="check">✓ Categoria escolhida corretamente</div>
+        <div class="check">✓ Chat preparado para receber público</div>
+        <div class="check">✓ Link pronto para partilha</div>
+      </aside>
+    </section>
+  </main>
+  <nav class="mobile-nav">
+  <a href="index.html">⌂</a>
+  <a href="explore.html">⌕</a>
+  <a href="create.html">＋</a>
+  <a href="messages.html">✉</a>
+  <a href="profile.html">◉</a>
+</nav>
+  <script src="app.js"></script>
+</body>
+</html>

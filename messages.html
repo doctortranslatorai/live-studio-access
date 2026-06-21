@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensagens — LIVELOOP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="logo"></span>
+    <span>LIVELOOP</span>
+  </a>
+  <div class="search"><span>⌕</span><input placeholder="Procurar lives, criadores ou categorias" /></div>
+  <div class="top-actions">
+    <a class="btn" href="explore.html">Explorar</a>
+    <a class="btn btn-primary" href="create.html">+ Criar live</a>
+    <a class="avatar" href="profile.html">P</a>
+  </div>
+</header>
+  <main class="page">
+    <section class="page-hero">
+      <div class="badge">✉ Mensagens privadas</div>
+      <h1>Conversa com criadores e espectadores</h1>
+      <p>Área social para contactos, convites de collab, avisos de live e mensagens privadas.</p>
+    </section>
+
+    <section class="messages-page">
+      <aside class="panel checklist">
+        <h3 class="right-title">Conversas</h3>
+        <div class="message-list">
+          <div class="message-item"><div class="mini-avatar">LV</div><div><strong>LiaVibes</strong><span>Vamos fazer collab?</span></div></div>
+          <div class="message-item"><div class="mini-avatar">NP</div><div><strong>NunoPlay</strong><span>Hoje há ranked?</span></div></div>
+          <div class="message-item"><div class="mini-avatar">MT</div><div><strong>MartaTalks</strong><span>Gostei da tua live.</span></div></div>
+        </div>
+      </aside>
+
+      <div class="panel conversation">
+        <div class="conversation-head">
+          <h3 class="right-title">LiaVibes</h3>
+          <p class="small-text">Online agora</p>
+        </div>
+
+        <div class="conversation-body" id="conversationBody">
+          <div class="dm">Gostei da tua ideia de rede social só para lives.</div>
+          <div class="dm me">Também acho que pode ter muito potencial.</div>
+          <div class="dm">Podíamos fazer uma live juntos para testar.</div>
+        </div>
+
+        <form class="chat-input" id="messageForm">
+          <input id="messageText" placeholder="Escrever mensagem..." />
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <nav class="mobile-nav">
+  <a href="index.html">⌂</a>
+  <a href="explore.html">⌕</a>
+  <a href="create.html">＋</a>
+  <a href="messages.html">✉</a>
+  <a href="profile.html">◉</a>
+</nav>
+  <script src="app.js"></script>
+</body>
+</html>

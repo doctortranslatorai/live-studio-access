@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explorar — LIVELOOP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="logo"></span>
+    <span>LIVELOOP</span>
+  </a>
+  <div class="search"><span>⌕</span><input placeholder="Procurar lives, criadores ou categorias" /></div>
+  <div class="top-actions">
+    <a class="btn" href="explore.html">Explorar</a>
+    <a class="btn btn-primary" href="create.html">+ Criar live</a>
+    <a class="avatar" href="profile.html">P</a>
+  </div>
+</header>
+  <main class="page">
+    <section class="page-hero">
+      <div class="badge"><span class="pulse"></span> Descoberta ao vivo</div>
+      <h1>Explora lives por <span class="gradient">energia</span>, tema e comunidade</h1>
+      <p>Descobre criadores em direto, salas emergentes, eventos agendados e transmissões populares.</p>
+    </section>
+
+    <section class="feed">
+      <div class="tabs">
+        <button class="tab active" data-category="Todas">Todas</button>
+        <button class="tab" data-category="Gaming">Gaming</button>
+        <button class="tab" data-category="Música">Música</button>
+        <button class="tab" data-category="Conversa">Conversa</button>
+        <button class="tab" data-category="Vendas">Vendas</button>
+        <button class="tab" data-category="Educação">Educação</button>
+      </div>
+      <div class="live-grid" id="liveGrid"></div>
+    </section>
+  </main>
+  <nav class="mobile-nav">
+  <a href="index.html">⌂</a>
+  <a href="explore.html">⌕</a>
+  <a href="create.html">＋</a>
+  <a href="messages.html">✉</a>
+  <a href="profile.html">◉</a>
+</nav>
+  <script src="app.js"></script>
+</body>
+</html>
