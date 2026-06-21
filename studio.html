@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel — LIVE Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"></span>
+      <span>LIVE Studio</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a href="acesso.html">Pedir acesso</a>
+      <a class="active keep" href="studio.html">Studio</a>
+      <span class="lang">PT 🌐</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero small">
+      <div class="hero-inner">
+        <div class="badge"><span class="pulse"></span> Painel do criador</div>
+        <h1>Estado do teu <span class="gradient-text">Studio</span></h1>
+        <p class="subtitle">Acompanha a candidatura, prepara o equipamento e ativa o modo live.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-toast="Download simulado. Liga este botão ao ficheiro real.">Download Studio</button>
+          <button class="btn" id="clearApplication">Limpar dados locais</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="content">
+      <section class="section">
+        <h2 class="section-title">Resumo</h2>
+        <div class="grid-3">
+          <div class="card mini">
+            <h3>Estado</h3>
+            <div class="metric">78%</div>
+            <p>Perfil quase pronto para revisão.</p>
+          </div>
+          <div class="card mini">
+            <h3>Checklist</h3>
+            <div class="metric">4/5</div>
+            <p>Falta apenas ligação do download real.</p>
+          </div>
+          <div class="card mini">
+            <h3>Modo</h3>
+            <div class="metric">LIVE</div>
+            <p>Preparado para página pública.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section grid-2">
+        <div class="card card-pad">
+          <h2 class="section-title" style="text-align:left">Candidatura guardada</h2>
+          <p class="section-subtitle" style="text-align:left">Dados enviados no formulário aparecem aqui.</p>
+          <div class="status-box" id="savedApplication">
+            <div class="status-item"><span>Pedido</span><span class="status warn">Ainda não enviado</span></div>
+            <div class="status-item"><span>Próximo passo</span><span class="status">Ir ao formulário</span></div>
+          </div>
+        </div>
+
+        <div class="card card-pad">
+          <h2 class="section-title" style="text-align:left">Checklist técnica</h2>
+          <div class="status-box">
+            <div class="status-item"><span>Microfone</span><span class="status ok">OK</span></div>
+            <div class="status-item"><span>Câmara</span><span class="status ok">OK</span></div>
+            <div class="status-item"><span>Ligação</span><span class="status ok">Estável</span></div>
+            <div class="status-item"><span>Download real</span><span class="status warn">Pendente</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Próximas páginas possíveis</h2>
+        <div class="card steps">
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <h3>login.html</h3>
+              <p>Entrada para criadores, painel privado e sessão protegida.</p>
+            </div>
+            <button class="btn" data-toast="Próximo ficheiro sugerido: login.html">Criar depois</button>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <h3>admin.html</h3>
+              <p>Painel para aprovar ou recusar candidaturas.</p>
+            </div>
+            <button class="btn" data-toast="Próximo ficheiro sugerido: admin.html">Criar depois</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer"><span>LIVE Studio</span><span>•</span><span>Creator Dashboard</span></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

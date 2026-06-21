@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedir Acesso — LIVE Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">
+      <span class="brand-mark"></span>
+      <span>LIVE Studio</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Início</a>
+      <a class="active" href="acesso.html">Pedir acesso</a>
+      <a class="keep" href="studio.html">Studio</a>
+      <span class="lang">PT 🌐</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero small">
+      <div class="hero-inner">
+        <div class="badge"><span class="pulse"></span> Candidatura</div>
+        <h1>Pedir acesso ao <span class="gradient-text">LIVE Studio</span></h1>
+        <p class="subtitle">Preenche os dados essenciais. Nesta versão, o pedido fica guardado localmente no navegador.</p>
+      </div>
+    </section>
+
+    <div class="content">
+      <section class="section grid-2">
+        <div class="card card-pad">
+          <h2 class="section-title" style="text-align:left">Formulário</h2>
+          <p class="section-subtitle" style="text-align:left">Dados básicos do criador e tipo de conteúdo.</p>
+
+          <form class="form" id="accessForm">
+            <div class="field">
+              <label for="name">Nome / Marca</label>
+              <input id="name" name="name" placeholder="Ex.: Pedro Figueiredo" required />
+            </div>
+
+            <div class="field">
+              <label for="handle">Username</label>
+              <input id="handle" name="handle" placeholder="@teuperfil" required />
+            </div>
+
+            <div class="field">
+              <label for="category">Categoria principal</label>
+              <select id="category" name="category" required>
+                <option value="">Escolher categoria</option>
+                <option>Gaming</option>
+                <option>Entretenimento</option>
+                <option>Música</option>
+                <option>Educação</option>
+                <option>Vendas / Live Commerce</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="reason">Porque queres acesso?</label>
+              <textarea id="reason" name="reason" placeholder="Explica em poucas linhas o objetivo das lives." required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Enviar pedido</button>
+          </form>
+        </div>
+
+        <div class="card info">
+          <div class="info-block">
+            <strong>Requisitos sugeridos</strong>
+            <p>Conta ativa, conteúdo original, boa conduta e equipamento mínimo para transmissão.</p>
+          </div>
+          <div class="info-block">
+            <strong>Validação</strong>
+            <p>Podes ligar este formulário a Firebase, Supabase, Airtable, Google Sheets ou backend próprio.</p>
+          </div>
+          <div class="info-block">
+            <strong>Próxima evolução</strong>
+            <p>Adicionar login, upload de documentos, aprovação manual e email automático.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="footer"><span>LIVE Studio</span><span>•</span><span>Access Flow</span></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
